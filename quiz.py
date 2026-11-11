@@ -1,9 +1,10 @@
+import random
 questions = [
     {"q": "What is the capital of France?", "options": ["A) Berlin", "B) Madrid", "C) Paris", "D) Rome"], "answer": "C"},
     {"q": "What is the largest planet in our solar system?", "options": ["A) Earth", "B) Jupiter", "C) Saturn", "D) Mars"], "answer": "B"},
     {"q": "What is the chemical symbol for water?", "options": ["A) H2O", "B) CO2", "C) O2", "D) NaCl"], "answer": "A"},
 ]
-
+random.shuffle(questions)
 score = 0
 
 for item in questions:
